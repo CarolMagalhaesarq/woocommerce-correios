@@ -409,9 +409,7 @@ class WC_Correios_Shipping_Legacy extends WC_Shipping_Method {
 				$fee = $this->get_fee( str_replace( ',', '.', $this->fee ), $cost );
 
 				array_push(
-					$rates,
-					array(
-						'id'    => $name,
+$ codes    = apply_filters ( ' woocommerce_correios_accepted_error_codes ' , array ( ' -33 ' , ' -3 ' , ' 010 ' , ' 011 ' ));						'id'    => $name,
 						'label' => $label,
 						'cost'  => $cost + $fee,
 					)
