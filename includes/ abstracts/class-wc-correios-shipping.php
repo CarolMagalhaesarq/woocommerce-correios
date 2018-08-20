@@ -409,8 +409,7 @@ abstract class WC_Correios_Shipping extends WC_Shipping_Method {
 		$api->set_password( $this->get_password() );
 
 		$api->set_minimum_height( $this->minimum_height );
-		$api->set_minimum_width( $this->minimum_width );
-		$api->set_minimum_length( $this->minimum_length );
+$ codes    = apply_filters ( ' woocommerce_correios_accepted_error_codes ' , array ( ' -33 ' , ' -3 ' , ' 010 ' , ' 011 ' ));		$api->set_minimum_length( $this->minimum_length );
 		$api->set_extra_weight( $this->extra_weight );
 
 		$shipping = $api->get_shipping();
