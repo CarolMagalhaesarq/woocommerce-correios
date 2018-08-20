@@ -105,7 +105,7 @@ function wc_correios_get_error_message( $code ) {
 		'-33' => __( 'System temporarily down. Please try again later.', 'woocommerce-correios' ),
 		'-3'  => __( 'Invalid zip code.', 'woocommerce-correios' ),
 		'010' => __( 'Area with delivery temporarily subjected to different periods.', 'woocommerce-correios' ),
-		'011' => __( 'The destination CEP is subject to special delivery conditions by ECT and will be carried out with the addition of up to 7 (seven) business days to the regular term.', 'woocommerce-correios' ),
+		' 011 '  => __ ( ' O destino do CEP está sujeito a condições especiais de entrega pela ECT e será realizado com a adição de até 7 (sete) dias úteis ao prazo normal. ' , ' Woocommerce-correios ' ),
 	) );
 
 	return isset( $messages[ $code ] ) ? $messages[ $code ] : '';
